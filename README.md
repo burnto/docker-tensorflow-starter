@@ -13,7 +13,7 @@ first time you do it) then run a bash shell in interactive mode.
 4. On your host machine, edit scripts and files in `share`, e.g.
 
     ```
-    you@yourhost$ echo "import tensorflow as tf" > share/hello-tensorflow.py
+    you@yourhost$ echo "import tensorflow as tf; print tf" > share/hello-tensorflow.py
     ```
 
 5. In the docker container shell, run scripts and files in `/share`, e.g.
