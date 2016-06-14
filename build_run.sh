@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+mkdir -p share
+
 IFS=':' read -ra DOCKER_BUILD_OUT <<< "$(docker build -q .)"
 DOCKER_IMAGE_ID="${DOCKER_BUILD_OUT[1]}"
 
