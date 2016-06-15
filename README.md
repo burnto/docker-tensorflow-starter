@@ -21,5 +21,15 @@ first time you do it) then run a bash shell in interactive mode.
 5. In the docker container shell, run scripts and files in `/share`, e.g.
 
     ```
-    root@d91d7f84a446:/notebooks# python /share/hello-tensorflow.py
+    root@d91d7f84a446:/share# python hello-tensorflow.py
     ```
+
+Within the container, all the standard TensorFlow docs pretty much apply. For example, [running a demo model](https://www.tensorflow.org/versions/r0.9/get_started/os_setup.html#run-a-tensorflow-demo-model) will just work:
+
+    ```
+    root@d91d7f84a446:/# python -m tensorflow.models.image.mnist.convolutional
+    Successfully downloaded train-images-idx3-ubyte.gz 9912422 bytes.
+    Successfully downloaded train-labels-idx1-ubyte.gz 28881 bytes. 
+    ...etc...
+    ```
+
