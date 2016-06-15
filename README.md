@@ -2,7 +2,7 @@
 
 This is a simple starting point for developing with TensorFlow via Docker.
 
-I love the [Docker install option for TensorFlow](https://www.tensorflow.org/versions/r0.9/get_started/os_setup.html#docker-installation), but I found it missing a few little steps to enable a more genereal development workflow. Rather than run Jupyter in the container, I wanted to be able to run my own scripts in the container, but edit on my machine.
+I love the [Docker install option for TensorFlow](https://www.tensorflow.org/versions/r0.9/get_started/os_setup.html#docker-installation), but I found it missing a few little steps to enable a more general development workflow. Rather than run Jupyter in the container, I wanted to be able to run my own scripts in the container, but edit on my machine.
 
 This repo is just a simple `build_run.sh` script that builds and runs a prompt in a Docker container with TensorFlow dependencies installed, and with a `/share` volume shared with `share` on the host, for easy editing.
 
