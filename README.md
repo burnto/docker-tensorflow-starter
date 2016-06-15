@@ -11,7 +11,7 @@ To use:
 1. [Install docker](https://docs.docker.com/engine/installation/).
 2. Clone this repo.
 3. In the repo, run `build_run.sh`. This will build (and takes a long time the
-first time you do it) then run a bash shell in interactive mode.
+first time you do it) then run an interactive bash shell.
 4. On your host machine, edit scripts and files in `share`, e.g.
 
     ```
